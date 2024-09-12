@@ -1,8 +1,18 @@
-import { motion } from "framer-motion";
-import React from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import React, { useRef } from "react";
 import { values } from "../../constants/Values";
+import { useInView } from "react-intersection-observer";
 
 const OurValuesSection = () => {
+  const SectionRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: SectionRef,
+    offset: ["start end", "end start"],
+  });
+  const y = useTransform(scrollYProgress, [0, 1], ["-20%", "10%"]);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   const containerVariants = {
     hidden: { opacity: 0, y: 100 },
     visible: {
@@ -30,7 +40,7 @@ const OurValuesSection = () => {
   };
 
   return (
-    <section className="w-full py-20 horizontal-padding min-h-screen relative">
+    <section className="w-full py-12 horizontal-padding min-h-screen relative">
       <motion.div className="absolute w-full h-[120%] -z-10"></motion.div>
       <motion.h2
         className="red-text section-heading text-center quantico-fonts"
@@ -42,13 +52,13 @@ const OurValuesSection = () => {
         Our Values
       </motion.h2>
 
-      <div className="w-full md:mt-20 2xl:mt-20 flex flex-col gap-y-10 lg:gap-y-20">
+      <div className="w-full mt-20 2xl:mt-20 flex flex-col gap-y-20">
         {values.map((value, index) => {
           return (
             <div
               key={index}
-              className={`w-full flex flex-col gap-y-8 items-center justify-between gap-x-10 ${
-                index % 2 === 1 && "flex-col lg:flex-row-reverse"
+              className={`w-full flex gap-y-8 items-center justify-between gap-x-10 ${
+                index % 2 === 0 && "flex-col lg:flex-row-reverse"
               }`}
             >
               <motion.div
@@ -82,6 +92,12 @@ const OurValuesSection = () => {
                   src={value.image}
                   alt=""
                   className="lg:w-full object-cover h-[70vh]"
+                  style={{
+                    transform: isInView ? "none" : "translateY(100px)",
+                    opacity: isInView ? 1 : 0,
+                    transition:
+                      "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+                  }}
                 />
               </div>
             </div>

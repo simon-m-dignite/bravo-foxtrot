@@ -19,7 +19,7 @@ const OverviewSection = () => {
         className="absolute w-full h-[120%] -z-10"
         style={{ top: y }}
       ></motion.div>
-      <div className="w-full flex items-start justify-between z-10">
+      <div className="w-full flex flex-col lg:flex-row gap-6 items-start justify-between z-10">
         <div className="w-full lg:w-[40%]">
           <h2
             ref={ref}
@@ -40,9 +40,8 @@ const OverviewSection = () => {
               transform: isInView ? "none" : "translateY(100px)",
               opacity: isInView ? 1 : 0,
               transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-              // scale: isInView ? "1" : "0.5",
             }}
-            className="text-3xl leading-[37px] 2xl:leading-8 text-white text-start"
+            className="text-xl lg:text-3xl leading-[37px] 2xl:leading-8 text-white text-start"
           >
             Bravo Foxtrot is one of the leading software companies developing
             practical and new- generational software solutions incorporating
