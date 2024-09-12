@@ -14,9 +14,14 @@ const AboutUsHero = () => {
       ref={SectionRef}
       className="w-full horizontal-padding h-[60vh] lg:h-screen flex flex-col items-start justify-center gap-6 2xl:gap-12 relative"
     >
-      <video autoPlay muted loop className="w-full h-full absolute inset-0 z-0">
+      {/* <video autoPlay muted loop className="w-full h-full absolute inset-0 z-0">
         <source src="/bravo-foxtrot.mp4" />
-      </video>
+      </video> */}
+      <img
+        src="/logo.png"
+        alt=""
+        className="w-auto h-[90%] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0 opacity-40"
+      />
       <motion.div
         className="absolute w-full h-[120%] -z-10"
         style={{ top: y }}
