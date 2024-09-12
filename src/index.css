@@ -1,0 +1,166 @@
+/* Quantico Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/* Montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  /* background-color: black; */
+  /* color: white; */
+}
+
+.quantico-fonts {
+  font-family: "Quantico", sans-serif;
+}
+
+.poppins-fonts {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.inter-fonts {
+  font-family: "Inter", sans-serif !important;
+}
+
+.red-text {
+  /* @apply text-[#761c1d]; */
+  @apply text-[#F79F1F];
+}
+
+.yellow-bg {
+  @apply bg-[#F79F1F];
+}
+
+.secondary-text {
+  @apply text-[#656565];
+}
+
+.section-heading {
+  @apply text-4xl md:text-6xl quantico-fonts;
+  font-weight: 600;
+}
+
+.section-paragraph {
+  @apply text-[20px] lg:w-2/3 mx-auto text-center 2xl:w-1/2 2xl:leading-8;
+}
+
+.text-size {
+  @apply text-xl;
+}
+
+.red-bg {
+  @apply bg-[#761c1d];
+}
+
+.btn {
+  @apply bg-[#F79F1F] px-6 py-3 rounded-full text-[15px] font-medium text-white;
+}
+
+.horizontal-padding {
+  @apply px-4 md:px-16 lg:px-20 2xl:px-44;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[#2d2d2d] rounded-full;
+}
+
+.border-text {
+  /* font-size: 224px; */
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(35, 35, 35);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @apply bg-transparent;
+}
+
+/* product slider */
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin: 25px 0; */
+}
+
+.slider-container .slider {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 375px) {
+  .slider-container .slider {
+    height: 400px;
+    width: 300px;
+  }
+}
+
+.slider-container .slider .image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  will-change: transform, opacity;
+}
+
+.slider-container .slider .image:hover {
+  cursor: grab;
+}
+
+.slider-container .slider .image:active {
+  cursor: grabbing;
+}
+
+.slider-container .buttons {
+  margin-top: 12px;
+}
+
+.slider-container .buttons button {
+  outline: none;
+  border: 1px solid white;
+  user-select: none;
+  padding: 10px 12px;
+  transform: skewY(-5deg) rotate(5deg);
+  background-color: grey; /* Replace $grey with the actual color value */
+  font-family: inherit;
+  font-size: inherit;
+  color: white;
+  transition: 0.07s ease-out transform;
+}
+
+.slider-container .buttons button:first-of-type {
+  margin-right: 15px;
+}
+
+.slider-container .buttons button:hover {
+  cursor: pointer;
+}
+
+.slider-container .buttons button:active {
+  transform: scale(0.85) skewY(-5deg) rotate(5deg);
+}
