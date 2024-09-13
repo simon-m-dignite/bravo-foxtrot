@@ -10,7 +10,7 @@ import Lenis from "lenis";
 
 const HomePage = () => {
   useEffect(() => {
-    document.title = "Homepage - 68 Ventures";
+    document.title = "Home - Bravo Foxtrot";
     const lenis = new Lenis();
     function raf(time) {
       lenis.raf(time);
