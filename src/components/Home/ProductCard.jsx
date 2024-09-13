@@ -174,11 +174,11 @@ const ProductCard = ({
               className="absolute top-1.5 left-12 lg:left-6 inset-0 w-[210px] lg:w-[255px] h-[450px] lg:h-[550px] rounded-[30px] object-cover"
             />
           </div>
-          <div className="relative hidden lg:block">
+          <div className="relative hidden md:block">
             <img
               src="/ios-app-mobile-sketch.png"
               alt=""
-              className="w-[303px] h-[560px] object-contain"
+              className="w-[305px] h-[460px] lg:h-[560px] object-contain"
             />
             <img
               src="/route-scout-2.png"

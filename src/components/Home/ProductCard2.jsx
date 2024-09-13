@@ -146,21 +146,21 @@ const ProductCard = ({
               className="absolute top-1.5 left-12 lg:left-6 inset-0 w-[210px] lg:w-[255px] h-[450px] lg:h-[550px] rounded-[30px] object-cover"
             />
           </div>
-          <div className="relative hidden lg:block">
+          <div className="relative hidden md:block">
             <img
               src="/mobile-timers.png"
               alt=""
-              className="absolute top-2 rounded-t-[35px] left-6 w-[255px] z-10 "
+              className="absolute top-1 rounded-t-[35px] left-12 lg:left-6 w-[210px] lg:w-[255px] z-10"
             />
             <img
               src="/ios-app-mobile-sketch.png"
               alt=""
-              className="w-[303px] h-[560px] object-contain"
+              className="w-[305px] h-[460px] lg:h-[560px] object-contain"
             />
             <img
               src="/make-cents-2.jpg"
               alt=""
-              className="absolute top-1 left-6 inset-0 w-[255px] h-[550px] rounded-[35px] object-cover"
+              className="absolute top-1.5 left-12 lg:left-6 inset-0 w-[210px] lg:w-[255px] h-[450px] lg:h-[550px] rounded-[30px] object-cover"
             />
           </div>
         </div>
