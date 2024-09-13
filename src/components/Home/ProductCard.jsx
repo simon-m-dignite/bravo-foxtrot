@@ -48,28 +48,40 @@ const ProductCard = ({
   const IMAGES = [
     {
       id: 1,
-      imageSrc: "/route-scout-image-1.jpg",
+      imageSrc: "/1.png",
     },
     {
       id: 2,
-      imageSrc: "/route-scout-image-2.jpg",
+      imageSrc: "/2.png",
     },
     {
       id: 3,
-      imageSrc: "/criminal-activity.jpg",
+      imageSrc: "/3.png",
     },
-    {
-      id: 4,
-      imageSrc: "/investigation-image.jpg",
-    },
-    {
-      id: 5,
-      imageSrc: "/information-sharing.jpg",
-    },
-    {
-      id: 6,
-      imageSrc: "/record-management.jpg",
-    },
+    // {
+    //   id: 1,
+    //   imageSrc: "/route-scout-image-1.jpg",
+    // },
+    // {
+    //   id: 2,
+    //   imageSrc: "/route-scout-image-2.jpg",
+    // },
+    // {
+    //   id: 3,
+    //   imageSrc: "/criminal-activity.jpg",
+    // },
+    // {
+    //   id: 4,
+    //   imageSrc: "/investigation-image.jpg",
+    // },
+    // {
+    //   id: 5,
+    //   imageSrc: "/information-sharing.jpg",
+    // },
+    // {
+    //   id: 6,
+    //   imageSrc: "/record-management.jpg",
+    // },
   ];
 
   const [[imageCount, direction], setImageCount] = useState([0, 0]);
@@ -131,7 +143,7 @@ const ProductCard = ({
               <motion.div
                 key={imageCount}
                 style={{
-                  background: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${IMAGES[activeImageIndex].imageSrc})`,
+                  background: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(${IMAGES[activeImageIndex].imageSrc})`,
                   backgroundPosition: "center",
                   backgroundSize: "cover",
                 }}
