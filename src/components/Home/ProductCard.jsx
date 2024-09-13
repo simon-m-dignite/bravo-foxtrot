@@ -137,8 +137,9 @@ const ProductCard = ({
           </button>
         </div>
 
-        <div className="w-full lg:w-[55%] h-[50vh] lg:min-h-[80vh] relative group slider-container">
-          <div className="slider">
+        <div className="w-full lg:w-[55%] h-[50vh] lg:min-h-[80vh] relative group flex justify-center">
+          {/* slider-container */}
+          {/* <div className="slider">
             <AnimatePresence initial={false} custom={direction}>
               <motion.div
                 key={imageCount}
@@ -160,6 +161,30 @@ const ProductCard = ({
                 className="image"
               />
             </AnimatePresence>
+          </div> */}
+          <div className="relative">
+            <img
+              src="/ios-app-mobile-sketch.png"
+              alt=""
+              className="w-[303px] h-[560px] object-contain"
+            />
+            <img
+              src="/route-scout-1.png"
+              alt=""
+              className="absolute top-1 left-6 inset-0 w-[255px] h-[550px] rounded-[35px]"
+            />
+          </div>
+          <div className="relative">
+            <img
+              src="/ios-app-mobile-sketch.png"
+              alt=""
+              className="w-[303px] h-[560px] object-contain"
+            />
+            <img
+              src="/route-scout-2.png"
+              alt=""
+              className="absolute top-1 left-6 inset-0 w-[255px] h-[550px] rounded-[35px]"
+            />
           </div>
         </div>
       </div>

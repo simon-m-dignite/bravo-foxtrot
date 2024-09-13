@@ -104,8 +104,9 @@ const ProductCard = ({
       <div
         className={`relative w-full group flex flex-col-reverse lg:flex-row gap-x-4 gap-y-7 overflow-hidden mt-20`}
       >
-        <div className="w-full lg:w-[55%] h-[50vh] lg:min-h-[80vh] relative group slider-container">
-          <div className="slider">
+        <div className="w-full lg:w-[55%] h-[50vh] lg:min-h-[80vh] relative group flex justify-center">
+          {/* slider-container */}
+          {/* <div className="slider">
             <AnimatePresence initial={false} custom={direction}>
               <motion.div
                 key={imageCount}
@@ -127,6 +128,40 @@ const ProductCard = ({
                 className="image"
               />
             </AnimatePresence>
+          </div> */}
+          <div className="relative">
+            <img
+              src="/mobile-timers.png"
+              alt=""
+              className="absolute top-1 rounded-t-[35px] left-6 w-[255px] z-10 "
+            />
+            <img
+              src="/ios-app-mobile-sketch.png"
+              alt=""
+              className="w-[303px] h-[560px] object-contain"
+            />
+            <img
+              src="/make-cents-1.jpg"
+              alt=""
+              className="absolute top-1 left-6 inset-0 w-[255px] h-[550px] rounded-[35px] object-cover"
+            />
+          </div>
+          <div className="relative">
+            <img
+              src="/mobile-timers.png"
+              alt=""
+              className="absolute top-2 rounded-t-[35px] left-6 w-[255px] z-10 "
+            />
+            <img
+              src="/ios-app-mobile-sketch.png"
+              alt=""
+              className="w-[303px] h-[560px] object-contain"
+            />
+            <img
+              src="/make-cents-2.jpg"
+              alt=""
+              className="absolute top-1 left-6 inset-0 w-[255px] h-[550px] rounded-[35px] object-cover"
+            />
           </div>
         </div>
 
