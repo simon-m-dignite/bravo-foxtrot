@@ -137,7 +137,7 @@ const ProductCard = ({
           </button>
         </div>
 
-        <div className="w-full lg:w-[55%] h-[50vh] lg:min-h-[80vh] relative group flex justify-center">
+        <div className="w-full lg:w-[55%] min-h-[50vh] lg:min-h-[80vh] relative group flex justify-center">
           {/* slider-container */}
           {/* <div className="slider">
             <AnimatePresence initial={false} custom={direction}>
@@ -166,15 +166,15 @@ const ProductCard = ({
             <img
               src="/ios-app-mobile-sketch.png"
               alt=""
-              className="w-[303px] h-[560px] object-contain"
+              className="w-[305px] h-[460px] lg:h-[560px] object-contain"
             />
             <img
               src="/route-scout-1.png"
               alt=""
-              className="absolute top-1 left-6 inset-0 w-[255px] h-[550px] rounded-[35px]"
+              className="absolute top-1.5 left-12 lg:left-6 inset-0 w-[210px] lg:w-[255px] h-[450px] lg:h-[550px] rounded-[30px] object-cover"
             />
           </div>
-          <div className="relative">
+          <div className="relative hidden lg:block">
             <img
               src="/ios-app-mobile-sketch.png"
               alt=""
@@ -183,7 +183,7 @@ const ProductCard = ({
             <img
               src="/route-scout-2.png"
               alt=""
-              className="absolute top-1 left-6 inset-0 w-[255px] h-[550px] rounded-[35px]"
+              className="absolute top-1.5 left-12 lg:left-6 inset-0 w-[210px] lg:w-[255px] h-[450px] lg:h-[550px] rounded-[30px] object-cover"
             />
           </div>
         </div>
