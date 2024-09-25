@@ -64,10 +64,10 @@ const Navbar = () => {
   };
   return (
     <nav className="w-full horizontal-padding py-6 flex items-center justify-between z-50 bg-black">
-      <div className="flex items-center gap-2">
+      <Link to={"/"} className="flex items-center gap-2">
         <img src="/logo.png" alt="logo" className="w-[67px] h-[67px] z-50" />
         <span className="red-text quantico-fonts text-2xl">Bravo Foxtrot</span>
-      </div>
+      </Link>
       <ul className="hidden items-center gap-10 2xl:gap-16 justify-end">
         <Link
           to="/"
