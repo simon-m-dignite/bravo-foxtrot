@@ -88,7 +88,7 @@ const services = [
   {
     title: "Secure Communication Platforms",
     description:
-      "Solutions for secure, real-time communication and data sharing between agencies to enhance coordination and response.",
+      "Solutions for secure, real-time communication and data sharing between agencies to enhance coordination and response further enabling joint operations.",
     image: "/secure-communication-platforms.jpg",
     num: "05",
   },

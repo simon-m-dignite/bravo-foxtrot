@@ -5,8 +5,8 @@ export const INDUSTRIES_SERVED = [
     image_src: "/law-enforcement-3.jpg",
   },
   {
-    title: "Military",
-    text: "We offer advanced situational awareness tools and real-time intelligence to enhance mission effectiveness and operational security.",
+    title: "Department of Defense and Justice",
+    text: "We offer advanced situational awareness tools and actionable intelligence to enhance mission effectiveness and operational security, enabling informed decision-making in critical situations.",
     image_src: "/law-enforcement-2.jpg",
   },
   {

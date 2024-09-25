@@ -19,7 +19,7 @@ const LifeAtBravoFoxtrot = () => {
   return (
     <div
       ref={SectionRef}
-      className="relative overflow-hidden py-12 lg:py-20 horizontal-padding"
+      className="relative overflow-hidden py-12 lg:py-20 horizontal-padding bg-black text-white"
     >
       <div className="relative w-full grid grid-cols-1 lg:grid-cols-2 gap-x-10 gap-y-10">
         <div className="flex flex-col items-start justify-center gap-5">

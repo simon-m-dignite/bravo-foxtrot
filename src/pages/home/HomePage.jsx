@@ -24,7 +24,7 @@ const HomePage = () => {
       <Hero />
       <VideoZoom />
       <OverviewSection />
-      <OurValuesSection />
+      {/* <OurValuesSection /> */}
       {/* <StatisticsSection /> */}
       <ProductsSection />
       <ServicesSection />

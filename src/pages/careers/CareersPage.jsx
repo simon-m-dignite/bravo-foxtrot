@@ -4,6 +4,7 @@ import ImageGrid from "../../components/Careers/ImageGrid";
 import BenefitsSection from "../../components/Careers/BenefitsSection";
 import CurrentOpenings from "../../components/Careers/CurrentOpenings";
 import Lenis from "lenis";
+import LifeAtBravoFoxtrot from "../../components/About/LifeAtBravoFoxtrot";
 
 const CareersPage = () => {
   useEffect(() => {
@@ -21,6 +22,7 @@ const CareersPage = () => {
       <CareersHero />
       <ImageGrid />
       <BenefitsSection />
+      <LifeAtBravoFoxtrot />
       <CurrentOpenings />
     </div>
   );

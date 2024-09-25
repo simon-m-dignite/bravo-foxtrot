@@ -14,13 +14,13 @@ const OverviewSection = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section className="w-full py-12 lg:my-20 horizontal-padding min-h-screen relative">
+    <section className="w-full py-12 lg:my-20 horizontal-padding relative">
       <motion.div
         className="absolute w-full h-[120%] -z-10"
         style={{ top: y }}
       ></motion.div>
-      <div className="w-full flex flex-col lg:flex-row gap-6 items-start justify-between z-10">
-        <div className="w-full lg:w-[40%]">
+      <div className="w-full flex flex-col gap-6 items-center justify-between z-10">
+        <div className="w-full text-center">
           <h2
             ref={ref}
             style={{
@@ -28,12 +28,12 @@ const OverviewSection = () => {
               opacity: isInView ? 1 : 0,
               transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
             }}
-            className="red-text text-xl quantico-fonts uppercase"
+            className="red-text section-heading text-center quantico-fonts"
           >
             Who we are
           </h2>
         </div>
-        <div className="w-full lg:w-[60%]">
+        <div className="w-full lg:w-[70%] mx-auto text-center">
           <p
             ref={ref}
             style={{
@@ -41,31 +41,31 @@ const OverviewSection = () => {
               opacity: isInView ? 1 : 0,
               transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
             }}
-            className="text-xl lg:text-3xl leading-[37px] 2xl:leading-8 text-white text-start"
+            className="text-xl lg:text-xl leading-[37px] 2xl:leading-8 text-white"
           >
-            Bravo Foxtrot is one of the leading software companies developing
-            practical and new- generational software solutions incorporating
-            AI/ML in the fight against criminal and illicit activities. Our
-            mission is to provide the best products to law enforcement to ensure
-            the officer’s safety and the effectiveness of their operations.
-            Route Scout and Make Cents products provide the investigative team
-            with the predictive analysis and real-time needed to investigate
-            human trafficking, homicide, kidnapping, narcotics, financial
-            crimes, and more.
+            Bravo Foxtrot is a leading software company at the forefront of
+            developing innovative software solutions that leverage AI/ML to
+            combat criminal and illicit activities. Our mission is to empower
+            law enforcement with cutting-edge tools that enhance officer safety
+            and operational effectiveness. Our Route Scout and Make Cents
+            products equip investigative teams with the predictive analytics and
+            real-time insights necessary to tackle issues like human
+            trafficking, homicide, kidnapping, narcotics, financial crimes, and
+            beyond.
           </p>
-          <div className="mt-14 flex items-center">
+          <div className="mt-10 flex items-center justify-center">
             <Link
               to="/contact-us"
-              className="px-7 py-4 uppercase rounded-full bg-[#F79F1F] text-white font-medium text-base"
+              className="px-7 py-3.5 uppercase rounded-full bg-[#F79F1F] text-white font-medium text-[15px] flex items-center gap-2"
             >
-              Know More
+              Know More <GoArrowUpRight className="text-xl" />
             </Link>
-            <Link
+            {/* <Link
               to="/contact-us"
               className="bg-[#F79F1F] text-white py-4 px-4 rounded-full m-[1px]"
             >
               <GoArrowUpRight className="text-2xl" />
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

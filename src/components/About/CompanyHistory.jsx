@@ -26,9 +26,9 @@ const CompanyHistory = () => {
         <div className="relative">
           <VideoSection />
         </div>
-        <div className="flex flex-col items-start text-start justify-center gap-6 px-4 lg:px-12 xl:px-16">
+        <div className="flex flex-col items-start text-start justify-center gap-6 px-4 lg:px-12 xl:px-16 relative">
           <h3
-            ref={ref1} // Use the first ref here
+            ref={ref1}
             style={{
               transform: inView1 ? "none" : "translateY(70px)",
               opacity: inView1 ? 1 : 0,
@@ -39,7 +39,7 @@ const CompanyHistory = () => {
             Mission and Vision
           </h3>
           <p
-            ref={ref2} // Use the second ref here
+            ref={ref2}
             style={{
               transform: inView2 ? "none" : "translateY(70px)",
               opacity: inView2 ? 1 : 0,
@@ -47,8 +47,11 @@ const CompanyHistory = () => {
             }}
             className="text-size"
           >
-            Our mission is to provide the best products to law enforcement to
-            ensure officers’ safety and the effectiveness of their operations.
+            Our mission is to deliver top-tier products to law enforcement,
+            ensuring officer safety and enhancing operational effectiveness. We
+            are committed to innovation, collaboration, and continuous
+            improvement to meet the evolving challenges faced by those who serve
+            and protect our communities.
           </p>
           <p
             ref={ref3} // Use the third ref here
@@ -59,10 +62,13 @@ const CompanyHistory = () => {
             }}
             className="text-size"
           >
-            Our vision is to establish ourselves as the foremost worldwide
-            supplier of advanced technology solutions for law enforcement. We
-            aim to be known for our dedication to superior quality and safety
-            and for supporting those who protect our communities.
+            Our vision is to become the foremost global provider of advanced
+            technology solutions for law enforcement. We strive to be recognized
+            for our unwavering commitment to quality and safety while supporting
+            those who protect our communities. We envision a future where our
+            cutting-edge innovations enable law enforcement agencies to respond
+            more effectively to challenges, ultimately fostering a safer society
+            for everyone.
           </p>
         </div>
       </div>

@@ -60,15 +60,12 @@ const ProductsSection = () => {
             }}
             className="text-size lg:w-2/3 mx-auto text-center 2xl:w-1/2 2xl:leading-8"
           >
-            Bravo Foxtrot is a leading software company specializing in
-            innovative and practical software solutions that incorporate AI and
-            ML to combat criminal and illicit activities. Our mission is to
-            deliver the best products to law enforcement, enhancing officer
-            safety and operational effectiveness. With offerings like Route
-            Scout and Make Cents, we equip investigative teams with predictive
-            analysis and real-time data essential for tackling human
-            trafficking, homicide, kidnapping, narcotics, financial crimes, and
-            more.
+            Bravo Foxtrot’s mission is to provide law enforcement with superior
+            products that enhance officer safety and operational efficiency.
+            Through tools like Route Scout and Make Cents, we empower
+            investigative teams with critical predictive analytics and real-time
+            data to effectively combat human trafficking, homicide, kidnapping,
+            narcotics, financial crimes, and more.
           </motion.p>
         </div>
       </div>

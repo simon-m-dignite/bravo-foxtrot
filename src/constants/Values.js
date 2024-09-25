@@ -6,12 +6,12 @@ export const values = [
   },
   {
     title: "Commitment",
-    desc: "Bulding lasting relationships, delivering reliable solutions and continuously improving to meet our customers evolving needs.",
+    desc: "Building lasting relationships, delivering reliable solutions and continuously improving to meet our customers evolving needs.",
     image: "/values-commitment.jpg",
   },
   {
     title: "Justice",
-    desc: "Upholding fairness and integrity in all our technologies, supporting the ethical pursuit of truth and accountability.",
+    desc: "Championing fairness and integrity in all our technologies, promoting the ethical pursuit of truth and accountability.",
     image: "/values-justice.jpg",
   },
 ];
