@@ -56,7 +56,7 @@ const OverviewSection = () => {
           <div className="mt-10 flex items-center justify-center">
             <Link
               to="/contact-us"
-              className="px-7 py-3.5 uppercase rounded-full bg-[#F79F1F] text-white font-medium text-[15px] flex items-center gap-2"
+              className="px-7 py-3.5 uppercase rounded-full yellow-bg text-white font-medium text-[15px] flex items-center gap-2"
             >
               Know More <GoArrowUpRight className="text-xl" />
             </Link>

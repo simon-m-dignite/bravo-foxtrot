@@ -67,7 +67,7 @@ const LifeAtBravoFoxtrot = () => {
           >
             <Link
               to="/careers"
-              className="inline-block outline-none border border-[#f79f1f] hover:bg-[#f79f1f] py-3 px-5 lg:px-40 text-center font-medium text-white text-sm"
+              className="inline-block outline-none border border-[#E5B447] hover:bg-[#E5B447] py-3 px-5 lg:px-40 text-center font-medium text-white text-sm"
             >
               Join Our Team
             </Link>
@@ -78,7 +78,7 @@ const LifeAtBravoFoxtrot = () => {
           <div className="hidden lg:grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
             <div className="h-52 w-40 2xl:h-64 2xl:w-44 overflow-hidden rounded-lg">
               <img
-                src="https://placekeanu.com/200/300"
+                src="/office-01.jpg"
                 alt=""
                 className="h-full w-full object-cover object-center"
               />

@@ -81,7 +81,7 @@ const IndustryCard = ({ title, text, image, index }) => {
               transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
             }}
           >
-            <span className="border rounded-full w-9 h-9 flex items-center justify-center border-[#f79f1f] bg-[#f79f1f]">
+            <span className="border rounded-full w-9 h-9 flex items-center justify-center border-[#E5B447] bg-[#E5B447]">
               <GoArrowUpRight className="text-lg text-white" />
             </span>{" "}
             Get in touch

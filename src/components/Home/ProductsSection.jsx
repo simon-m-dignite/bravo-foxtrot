@@ -94,7 +94,7 @@ const ProductsSection = () => {
       <div className="w-full flex justify-center mt-28">
         <Link
           to="/products"
-          className="border border-[#f79f1f] text-[#f79f1f] px-10 py-3 quantico-fonts hover:bg-[#f79f1f] hover:text-white transition-all duration-300"
+          className="border border-[#E5B447] text-[#E5B447] px-10 py-3 quantico-fonts hover:bg-[#E5B447] hover:text-white transition-all duration-300"
         >
           View All Products
         </Link>

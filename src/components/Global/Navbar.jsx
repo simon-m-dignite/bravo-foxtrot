@@ -71,28 +71,28 @@ const Navbar = () => {
       <ul className="hidden items-center gap-10 2xl:gap-16 justify-end">
         <Link
           to="/"
-          className="text-lg quantico-fonts font-medium secondary-text cursor-pointer hover:text-yellow-600 transition-all duration-300"
+          className="text-lg quantico-fonts font-medium secondary-text cursor-pointer hover:text-[#E5B447] transition-all duration-300"
           // onClick={() => handleNavigate("/")}
         >
           Home
         </Link>
         <Link
           to="/about-us"
-          className="text-lg quantico-fonts font-medium secondary-text cursor-pointer hover:text-yellow-600 transition-all duration-300"
+          className="text-lg quantico-fonts font-medium secondary-text cursor-pointer hover:text-[#E5B447] transition-all duration-300"
           // onClick={() => handleNavigate("/about-us")}
         >
           About Us
         </Link>
         <Link
           to="/what-we-do"
-          className="text-lg quantico-fonts font-medium secondary-text cursor-pointer hover:text-yellow-600 transition-all duration-300"
+          className="text-lg quantico-fonts font-medium secondary-text cursor-pointer hover:text-[#E5B447] transition-all duration-300"
           // onClick={() => handleNavigate("/what-we-do")}
         >
           Services
         </Link>
         <Link
           to="/products"
-          className="text-lg quantico-fonts font-medium secondary-text cursor-pointer hover:text-yellow-600 transition-all duration-300"
+          className="text-lg quantico-fonts font-medium secondary-text cursor-pointer hover:text-[#E5B447] transition-all duration-300"
           // onClick={() => handleNavigate("/products")}
         >
           Products
@@ -100,7 +100,7 @@ const Navbar = () => {
 
         <Link
           to="/products"
-          className="text-lg quantico-fonts font-medium secondary-text cursor-pointer hover:text-yellow-600 transition-all duration-300"
+          className="text-lg quantico-fonts font-medium secondary-text cursor-pointer hover:text-[#E5B447] transition-all duration-300"
           // onClick={() => handleNavigate("/products")}
         >
           Industries Served
@@ -108,7 +108,7 @@ const Navbar = () => {
 
         <Link
           to="/careers"
-          className="text-lg quantico-fonts font-medium secondary-text cursor-pointer hover:text-yellow-600 transition-all duration-300"
+          className="text-lg quantico-fonts font-medium secondary-text cursor-pointer hover:text-[#E5B447] transition-all duration-300"
           // onClick={() => handleNavigate("/careers")}
         >
           Careers
@@ -116,7 +116,7 @@ const Navbar = () => {
 
         <Link
           to="/contact-us"
-          className="text-lg quantico-fonts font-medium secondary-text cursor-pointer hover:text-yellow-600 transition-all duration-300"
+          className="text-lg quantico-fonts font-medium secondary-text cursor-pointer hover:text-[#E5B447] transition-all duration-300"
           // onClick={() => handleNavigate("/contact-us")}
         >
           Contact Us

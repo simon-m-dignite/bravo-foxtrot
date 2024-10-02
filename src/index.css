@@ -32,12 +32,13 @@
 }
 
 .red-text {
-  /* @apply text-[#761c1d]; */
-  @apply text-[#cb932d];
+  /* @apply text-[#cb932d]; */
+  color: #e5b447;
 }
 
 .yellow-bg {
-  @apply bg-[#cb932d];
+  /* @apply bg-[#cb932d]; */
+  background: #e5b447;
 }
 
 .secondary-text {
@@ -62,7 +63,8 @@
 }
 
 .btn {
-  @apply bg-[#cb932d] px-6 py-3 rounded-full text-[15px] font-medium text-white;
+  /* @apply bg-[#cb932d] px-6 py-3 rounded-full text-[15px] font-medium text-white; */
+  @apply bg-[#E5B447] px-6 py-3 rounded-full text-[15px] font-medium text-white;
 }
 
 .horizontal-padding {

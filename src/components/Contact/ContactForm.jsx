@@ -89,7 +89,7 @@ const ContactForm = () => {
                 delay: 0.2,
               }}
             >
-              <TfiEmail className="text-[#f79f1f] text-xl" />
+              <TfiEmail className="text-[#E5B447] text-xl" />
               <Link to="mailto:" className="text-[15px]">
                 info@bravofoxtrotllc.com
               </Link>
@@ -104,7 +104,7 @@ const ContactForm = () => {
                 delay: 0.4,
               }}
             >
-              <FiPhoneCall className="text-[#f79f1f] text-xl" />
+              <FiPhoneCall className="text-[#E5B447] text-xl" />
               <Link to="tel:(404) 236-9456" className="text-[15px]">
                 (404) 236-9456
               </Link>
@@ -119,7 +119,7 @@ const ContactForm = () => {
                 delay: 0.6,
               }}
             >
-              <SlLocationPin className="text-[#f79f1f] text-xl" />
+              <SlLocationPin className="text-[#E5B447] text-xl" />
               <p className="text-[15px]">
                 225 Reformation Pkwy Suite #200-42, Canton, GA 30114
               </p>
@@ -134,7 +134,7 @@ const ContactForm = () => {
                 delay: 0.8,
               }}
             >
-              <TfiEmail className="text-[#f79f1f] text-xl" />
+              <TfiEmail className="text-[#E5B447] text-xl" />
               <Link
                 to="mailto:careers@bravofoxtrotllc.com"
                 className="text-[15px]"
@@ -175,7 +175,7 @@ const ContactForm = () => {
                   type="text"
                   name="firstName"
                   id="firstName"
-                  className={`block p-5 w-full text-2xl text-white bg-transparent border rounded-full border-[#2d2d2d] appearance-none focus:border-[#f79f1f] focus:outline-none focus:ring-0 peer font-normal quantico-fonts ${
+                  className={`block p-5 w-full text-2xl text-white bg-transparent border rounded-full border-[#2d2d2d] appearance-none focus:border-[#E5B447] focus:outline-none focus:ring-0 peer font-normal quantico-fonts ${
                     errors.firstName ? "border-red-500" : ""
                   }`}
                   placeholder="Your first Name"
@@ -206,7 +206,7 @@ const ContactForm = () => {
                   type="text"
                   name="lastName"
                   id="lastName"
-                  className={`block p-5 w-full text-2xl text-white bg-transparent border rounded-full border-[#2d2d2d] appearance-none focus:border-[#f79f1f] focus:outline-none focus:ring-0 peer font-normal quantico-fonts ${
+                  className={`block p-5 w-full text-2xl text-white bg-transparent border rounded-full border-[#2d2d2d] appearance-none focus:border-[#E5B447] focus:outline-none focus:ring-0 peer font-normal quantico-fonts ${
                     errors.lastName ? "border-red-500" : ""
                   }`}
                   placeholder="Your last Name"
@@ -237,7 +237,7 @@ const ContactForm = () => {
                 type="email"
                 name="email"
                 id="email"
-                className={`block p-5 w-full text-2xl text-white bg-transparent border rounded-full border-[#2d2d2d] appearance-none focus:border-[#f79f1f] focus:outline-none focus:ring-0 peer font-normal quantico-fonts ${
+                className={`block p-5 w-full text-2xl text-white bg-transparent border rounded-full border-[#2d2d2d] appearance-none focus:border-[#E5B447] focus:outline-none focus:ring-0 peer font-normal quantico-fonts ${
                   errors.email ? "border-red-500" : ""
                 }`}
                 placeholder="Your email address"
@@ -266,7 +266,7 @@ const ContactForm = () => {
                 id="message"
                 name="message"
                 rows={5}
-                className={`block p-5 w-full text-2xl text-white bg-transparent border rounded-[44px] border-[#2d2d2d] appearance-none focus:border-[#f79f1f] focus:outline-none focus:ring-0 peer font-normal quantico-fonts ${
+                className={`block p-5 w-full text-2xl text-white bg-transparent border rounded-[44px] border-[#2d2d2d] appearance-none focus:border-[#E5B447] focus:outline-none focus:ring-0 peer font-normal quantico-fonts ${
                   errors.message ? "border-red-500" : ""
                 }`}
                 placeholder="Your message"
@@ -291,7 +291,7 @@ const ContactForm = () => {
             >
               <button
                 type="submit"
-                className="border border-[#F79F1F] px-10 py-3 text-xl font-semibold text-[#f79f1f] hover:text-white hover:bg-[#f79f1f] transition-all duration-300 rounded-full flex items-center gap-2"
+                className="border border-[#E5B447] px-10 py-3 text-xl font-semibold text-[#E5B447] hover:text-white hover:bg-[#E5B447] transition-all duration-300 rounded-full flex items-center gap-2"
               >
                 {loading ? "Sending..." : "Send"}{" "}
                 <FiArrowRight className="text-2xl" />

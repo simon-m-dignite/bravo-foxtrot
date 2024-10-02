@@ -172,8 +172,8 @@ const ProductCard = ({
           <p
             className={`secondary-text text-sm md:text-base lg:text-xl xl:text-2xl ${
               index % 2 === 0
-                ? "border-l border-yellow-600 pl-8"
-                : "border-r border-yellow-600 pr-8"
+                ? "border-l border-[#E5B447] pl-8"
+                : "border-r border-[#E5B447] pr-8"
             }`}
           >
             Our advanced financial crime tool enables law enforcement to
@@ -187,7 +187,7 @@ const ProductCard = ({
 
           <p className="red-text mt-6 italic text-sm">- Coming Soon</p>
 
-          <button className="w-full border border-[#F79F1F] uppercase py-3 hover:bg-[#f79f1f] transition-all duration-500 font-normal quantico-fonts mt-12">
+          <button className="w-full border border-[#E5B447] uppercase py-3 hover:bg-[#E5B447] transition-all duration-500 font-normal quantico-fonts mt-12">
             View Project
           </button>
         </div>

@@ -79,7 +79,7 @@ const Products = () => {
       </div>
 
       <div className="w-full flex justify-center mt-28">
-        <span className="border border-[#f79f1f] text-[#f79f1f] px-6 py-3 quantico-fonts">
+        <span className="border border-[#E5B447] text-[#E5B447] px-6 py-3 quantico-fonts">
           No More Products
         </span>
       </div>
