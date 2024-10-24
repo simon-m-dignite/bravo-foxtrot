@@ -33,12 +33,12 @@
 
 .red-text {
   /* @apply text-[#cb932d]; */
-  color: #e5b447;
+  color: #e0a56b;
 }
 
 .yellow-bg {
   /* @apply bg-[#cb932d]; */
-  background: #e5b447;
+  background: #e0a56b;
 }
 
 .secondary-text {
@@ -64,7 +64,7 @@
 
 .btn {
   /* @apply bg-[#cb932d] px-6 py-3 rounded-full text-[15px] font-medium text-white; */
-  @apply bg-[#E5B447] px-6 py-3 rounded-full text-[15px] font-medium text-white;
+  @apply bg-[#E0a56b] px-6 py-3 rounded-full text-[15px] font-medium text-white;
 }
 
 .horizontal-padding {

@@ -158,7 +158,7 @@ const ProductCard = ({
               className="w-[305px] h-[460px] lg:h-[560px] object-contain"
             />
             <img
-              src="/make-cents-2.jpg"
+              src="/our-products-make-cents.jpeg"
               alt=""
               className="absolute top-1.5 left-12 lg:left-6 inset-0 w-[210px] lg:w-[255px] h-[450px] lg:h-[550px] rounded-[30px] object-cover"
             />
@@ -172,8 +172,8 @@ const ProductCard = ({
           <p
             className={`secondary-text text-sm md:text-base lg:text-xl xl:text-2xl ${
               index % 2 === 0
-                ? "border-l border-[#E5B447] pl-8"
-                : "border-r border-[#E5B447] pr-8"
+                ? "border-l border-[#e0a56b] pl-8"
+                : "border-r border-[#e0a56b] pr-8"
             }`}
           >
             Our advanced financial crime tool enables law enforcement to
@@ -187,7 +187,7 @@ const ProductCard = ({
 
           <p className="red-text mt-6 italic text-sm">- Coming Soon</p>
 
-          <button className="w-full border border-[#E5B447] uppercase py-3 hover:bg-[#E5B447] transition-all duration-500 font-normal quantico-fonts mt-12">
+          <button className="w-full border border-[#e0a56b] uppercase py-3 hover:bg-[#e0a56b] transition-all duration-500 font-normal quantico-fonts mt-12">
             View Project
           </button>
         </div>

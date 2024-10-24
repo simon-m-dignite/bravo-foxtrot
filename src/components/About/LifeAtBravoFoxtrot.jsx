@@ -67,7 +67,7 @@ const LifeAtBravoFoxtrot = () => {
           >
             <Link
               to="/careers"
-              className="inline-block outline-none border border-[#E5B447] hover:bg-[#E5B447] py-3 px-5 lg:px-40 text-center font-medium text-white text-sm"
+              className="inline-block outline-none border border-[#e0a56b] hover:bg-[#e0a56b] py-3 px-5 lg:px-40 text-center font-medium text-white text-sm"
             >
               Join Our Team
             </Link>

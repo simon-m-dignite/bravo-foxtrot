@@ -75,28 +75,28 @@ const services = [
     title: "Predictive Analysis",
     description:
       "Tools that provide insights into criminal behavior and potential threats, helping law enforcement agencies proactively address crime.",
-    image: "/commercial-solutions.jpg",
+    image: "/services-predictive-analysis.jpeg",
     num: "03",
   },
   {
     title: "Real-Time Data Integration",
     description:
       "Seamless integration with Records Management Systems (RMS) and Computer-Aided Dispatch (CAD) systems for comprehensive situational awareness.",
-    image: "/aml.jpg",
+    image: "/services-real-time-data-integration.jpeg",
     num: "04",
   },
   {
     title: "Secure Communication Platforms",
     description:
       "Solutions for secure, real-time communication and data sharing between agencies to enhance coordination and response further enabling joint operations.",
-    image: "/secure-communication-platforms.jpg",
+    image: "/services-secure-communication-platforms.jpeg",
     num: "05",
   },
   {
     title: "Training and Support",
     description:
       "Comprehensive training and ongoing support for law enforcement personnel to maximize the effectiveness of our technology solutions.",
-    image: "/law-enforcement.jpg",
+    image: "/services-corporate-training-and-support.jpeg",
     num: "06",
   },
   //   {

@@ -14,7 +14,7 @@ const TeamSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
-    <section className="w-full py-12 lg:py-20 relative min-h-screen horizontal-padding">
+    <section className="w-full py-12 lg:py-20 relative min-h-screen horizontal-padding overflow-hidden">
       <motion.div
         className="absolute w-full h-[120%] -z-10"
         style={{ top: y }}
@@ -45,7 +45,7 @@ const TeamSection = () => {
         /> */}
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-8 lg:gap-12 mt-20 w-full z-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 lg:grid-cols-2 xl:grid-cols-2 gap-y-8 lg:gap-12 mt-20 w-full z-10">
         {team_members.map((card, index) => {
           return (
             <TeamMemberCard
@@ -54,6 +54,7 @@ const TeamSection = () => {
               index={index}
               image={card.image}
               key={index}
+              description={card.description}
             />
           );
         })}

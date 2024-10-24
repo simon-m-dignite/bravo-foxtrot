@@ -123,7 +123,7 @@ const ProductCard = ({
             Route Scout
           </h3>
           <p
-            className={`secondary-text text-sm md:text-base lg:text-xl xl:text-2xl border-l border-[#E5B447] pl-8`}
+            className={`secondary-text text-sm md:text-base lg:text-xl xl:text-2xl border-l border-[#e0a56b] pl-8`}
           >
             Route Scout is our state-of-the-art vehicle recognition and tracking
             software designed to enhance the capabilities of law enforcement
@@ -132,7 +132,7 @@ const ProductCard = ({
             information sharing and coordination across different jurisdictions.
           </p>
 
-          <button className="w-full border border-[#E5B447] uppercase py-3 hover:bg-[#E5B447] transition-all duration-500 font-normal quantico-fonts mt-12">
+          <button className="w-full border border-[#e0a56b] uppercase py-3 hover:bg-[#e0a56b] transition-all duration-500 font-normal quantico-fonts mt-12">
             View Project
           </button>
         </div>
