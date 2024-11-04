@@ -61,7 +61,7 @@ const BenefitsSection = () => {
         Why Join Us
       </motion.h3>
       <motion.div
-        className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10 mt-10"
+        className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10 mt-6"
         ref={gridRef}
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: gridInView ? 1 : 0, y: gridInView ? 0 : 50 }}

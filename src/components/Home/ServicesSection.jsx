@@ -57,20 +57,6 @@ const ServicesSection = () => {
 export default ServicesSection;
 
 const services = [
-  // {
-  //   title: "Route Scout",
-  //   description:
-  //     "Advanced vehicle recognition and tracking tool with real-time communication, patterns of life detection, and route prediction to support law enforcement operations.",
-  //   image: "/product-image.jpg",
-  //   num: "01",
-  // },
-  // {
-  //   title: "Make Cents",
-  //   description:
-  //     "Financial crime detection software focused on anti-money laundering, fraud detection, and cryptocurrency monitoring to aid local law enforcement in combating financial crimes.",
-  //   image: "/predictive-analysis.jpg",
-  //   num: "02",
-  // },
   {
     title: "Predictive Analysis",
     description:
@@ -99,10 +85,4 @@ const services = [
     image: "/services-corporate-training-and-support.jpeg",
     num: "06",
   },
-  //   {
-  //     title: "Conclusion",
-  //     description:
-  //       "Bravo Foxtrot LLC is committed to delivering specialized solutions that meet the unique needs of our diverse client base and ensure safety, security, and operational excellence.",
-  //     image: "/product-2.jpg",
-  //   },
 ];

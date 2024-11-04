@@ -57,8 +57,8 @@ const OurValuesSection = () => {
           return (
             <div
               key={index}
-              className={`w-full flex gap-y-8 items-center justify-between gap-x-10 ${
-                index % 2 === 0 && "flex-col lg:flex-row-reverse"
+              className={`w-full flex gap-y-8 items-center justify-between gap-x-10 flex-col lg:flex-row ${
+                index % 2 === 0 && "lg:flex-row-reverse"
               }`}
             >
               <motion.div
@@ -76,13 +76,13 @@ const OurValuesSection = () => {
                 </motion.span>
                 <motion.h3
                   variants={childVariants}
-                  className="red-text text-2xl lg:text-5xl"
+                  className="red-text text-3xl lg:text-5xl"
                 >
                   {value.title}
                 </motion.h3>
                 <motion.p
                   variants={childVariants}
-                  className="2xl:leading-7 text-base lg:text-2xl secondary-text"
+                  className="2xl:leading-7 text-lg lg:text-2xl secondary-text"
                 >
                   {value.desc}
                 </motion.p>
@@ -91,7 +91,7 @@ const OurValuesSection = () => {
                 <img
                   src={value.image}
                   alt=""
-                  className="lg:w-full object-cover h-[70vh]"
+                  className="lg:w-full object-cover h-auto lg:h-[70vh]"
                   style={{
                     transform: isInView ? "none" : "translateY(100px)",
                     opacity: isInView ? 1 : 0,

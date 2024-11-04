@@ -28,7 +28,7 @@ const IndustryCard = ({ title, text, image, index }) => {
         <img
           src={image}
           alt=""
-          className="rounded-3xl w-full h-full object-cover"
+          className="rounded-3xl w-full h-[40vh] lg:h-full object-cover"
           style={{
             transform: isInView ? "none" : "translateY(100px)",
             opacity: isInView ? 1 : 0,
@@ -65,7 +65,7 @@ const IndustryCard = ({ title, text, image, index }) => {
               opacity: isInView ? 1 : 0,
               transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
             }}
-            className="secondary-text text-2xl"
+            className="secondary-text text-xl md:text-2xl"
           >
             {text}
           </p>

@@ -42,26 +42,28 @@ const CurrentOpenings = () => {
         <table className="w-full">
           <thead>
             <tr className="bg-[#1c1c1c]">
-              <th className="text-start py-5 pl-10 rounded-l-xl red-text">
+              <th className="text-start py-5 pl-3 lg:pl-10 rounded-l-xl red-text text-sm lg:text-lg">
                 Job Title
               </th>
-              <th className="text-start py-5 red-text">Department</th>
-              {/* <th className="text-start py-5 red-text">Pay Type</th> */}
-              <th className="text-start py-5 rounded-r-xl red-text">Action</th>
+              <th className="text-start py-5 red-text text-sm lg:text-lg">
+                Department
+              </th>
+              <th className="text-start py-5 rounded-r-xl red-text text-sm lg:text-lg">
+                Action
+              </th>
             </tr>
           </thead>
           <tbody>
             {jobOpenings.map((job, index) => (
               <tr key={index} className="mb-8 border-b border-[#1c1c1c]">
-                <td className="font-normal text-base py-5 lg:pl-5">
+                <td className="font-normal text-sm md:text-base py-5 lg:pl-5">
                   {job.name}
                 </td>
-                <td className="py-5">{job.department}</td>
-                {/* <td className="py-5">{job.payType}</td> */}
-                <td className="py-5">
+                <td className="py-5 text-sm md:text-base">{job.department}</td>
+                <td className="py-5 ">
                   <button
                     type="button"
-                    className="text-sm py-2 rounded-lg font-normal"
+                    className="text-sm md:text-base py-2 rounded-lg font-normal"
                   >
                     Apply Now
                   </button>
@@ -71,18 +73,6 @@ const CurrentOpenings = () => {
             <tr></tr>
           </tbody>
         </table>
-        {/* <div className="w-full border grid grid-cols-3">
-          {jobOpenings.map((job, index) => (
-            <div key={index} className="mb-8">
-              <h3 className="font-semibold text-xl">{job.name}</h3>
-              <p>Department: {job.department}</p>
-              <p>Pay Type: {job.payType}</p>
-            </div>
-          ))}
-        </div>
-        <h4 className="quantico-fonts font-bold red-text text-xl">
-          Coming Soon
-        </h4> */}
       </motion.div>
     </section>
   );

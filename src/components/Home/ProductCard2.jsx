@@ -101,7 +101,7 @@ const ProductCard = ({
           <img
             src="/our-products-make-cents.jpeg"
             alt=""
-            className="absolute top-1.5 left-12 lg:left-6 inset-0 w-[210px] lg:w-2/3 mx-auto h-[450px] lg:h-[550px] rounded-[30px] object-cover"
+            className="lg:absolute top-1.5 left-12 lg:left-6 inset-0 w-[90%] lg:w-2/3 mx-auto h-[450px] lg:h-[550px] rounded-[30px] object-cover"
           />
           {/* </div> */}
         </div>
