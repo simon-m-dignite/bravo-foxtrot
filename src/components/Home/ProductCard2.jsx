@@ -7,6 +7,7 @@ import {
 } from "framer-motion";
 import { wrap } from "@popmotion/popcorn";
 import React, { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 const sliderVariants = {
   incoming: (direction) => ({
@@ -62,14 +63,6 @@ const ProductCard = ({
       id: 4,
       imageSrc: "/enhanced-investigation-support.jpg",
     },
-    // {
-    //   id: 5,
-    //   imageSrc: "/information-sharing.jpg",
-    // },
-    // {
-    //   id: 6,
-    //   imageSrc: "/record-management.jpg",
-    // },
   ];
 
   const [[imageCount, direction], setImageCount] = useState([0, 0]);
@@ -105,64 +98,12 @@ const ProductCard = ({
         className={`relative w-full group flex flex-col-reverse lg:flex-row gap-x-4 gap-y-7 overflow-hidden mt-20`}
       >
         <div className="w-full lg:w-[55%] min-h-[50vh] lg:min-h-[80vh] relative group flex justify-center">
-          {/* slider-container */}
-          {/* <div className="slider">
-            <AnimatePresence initial={false} custom={direction}>
-              <motion.div
-                key={imageCount}
-                style={{
-                  background: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${IMAGES[activeImageIndex].imageSrc})`,
-                  backgroundPosition: "center",
-                  backgroundSize: "cover",
-                }}
-                custom={direction}
-                variants={sliderVariants}
-                initial="incoming"
-                animate="active"
-                exit="exit"
-                transition={sliderTransition}
-                drag="x"
-                dragConstraints={{ left: 0, right: 0 }}
-                dragElastic={1}
-                onDragEnd={(_, dragInfo) => dragEndHandler(dragInfo)}
-                className="image"
-              />
-            </AnimatePresence>
-          </div> */}
-          <div className="relative">
-            <img
-              src="/mobile-timers.png"
-              alt=""
-              className="absolute top-1 rounded-t-[35px] left-12 lg:left-6 w-[210px] lg:w-[255px] z-10 "
-            />
-            <img
-              src="/ios-app-mobile-sketch.png"
-              alt=""
-              className="w-[305px] h-[460px] lg:h-[560px] object-contain"
-            />
-            <img
-              src="/make-cents-1.jpg"
-              alt=""
-              className="absolute top-1.5 left-12 lg:left-6 inset-0 w-[210px] lg:w-[255px] h-[450px] lg:h-[550px] rounded-[30px] object-cover"
-            />
-          </div>
-          <div className="relative hidden md:block">
-            <img
-              src="/mobile-timers.png"
-              alt=""
-              className="absolute top-1 rounded-t-[35px] left-12 lg:left-6 w-[210px] lg:w-[255px] z-10"
-            />
-            <img
-              src="/ios-app-mobile-sketch.png"
-              alt=""
-              className="w-[305px] h-[460px] lg:h-[560px] object-contain"
-            />
-            <img
-              src="/our-products-make-cents.jpeg"
-              alt=""
-              className="absolute top-1.5 left-12 lg:left-6 inset-0 w-[210px] lg:w-[255px] h-[450px] lg:h-[550px] rounded-[30px] object-cover"
-            />
-          </div>
+          <img
+            src="/our-products-make-cents.jpeg"
+            alt=""
+            className="absolute top-1.5 left-12 lg:left-6 inset-0 w-[210px] lg:w-2/3 mx-auto h-[450px] lg:h-[550px] rounded-[30px] object-cover"
+          />
+          {/* </div> */}
         </div>
 
         <div className="w-full lg:w-[45%] px-4 md:px-8 lg:px-12 2xl:px-44">
@@ -187,9 +128,12 @@ const ProductCard = ({
 
           <p className="red-text mt-6 italic text-sm">- Coming Soon</p>
 
-          <button className="w-full border border-[#e0a56b] uppercase py-3 hover:bg-[#e0a56b] transition-all duration-500 font-normal quantico-fonts mt-12">
-            View Project
-          </button>
+          <Link
+            to="/contact-us"
+            className="w-full block text-center border border-[#e0a56b] uppercase py-3 hover:bg-[#e0a56b] transition-all duration-500 font-normal quantico-fonts mt-12"
+          >
+            Request Demo
+          </Link>
         </div>
       </div>
     </div>

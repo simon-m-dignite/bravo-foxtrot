@@ -28,24 +28,10 @@ const TeamSection = () => {
           transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
         }}
       >
-        {/* <div
-          className="w-10 h-3 yellow-bg"
-          style={{
-            background:
-              "linear-gradient(to right, rgba(250, 200, 21, 0), rgba(250, 200, 21, 1))",
-          }}
-        /> */}
         <h2 className="section-heading red-text uppercase">Team members</h2>
-        {/* <div
-          className="w-10 h-3 yellow-bg"
-          style={{
-            background:
-              "linear-gradient(to left, rgba(250, 200, 21, 0), rgba(250, 200, 21, 1))",
-          }}
-        /> */}
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 lg:grid-cols-2 xl:grid-cols-2 gap-y-8 lg:gap-12 mt-20 w-full z-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 lg:grid-cols-2 xl:grid-cols-3 gap-y-8 lg:gap-12 mt-20 w-full z-10">
         {team_members.map((card, index) => {
           return (
             <TeamMemberCard

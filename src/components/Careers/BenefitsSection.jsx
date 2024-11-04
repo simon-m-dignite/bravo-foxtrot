@@ -86,66 +86,6 @@ const BenefitsSection = () => {
           );
         })}
       </motion.div>
-      <motion.div
-        className="w-full mt-12 flex flex-col lg:flex-row gap-5"
-        ref={imageRef}
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: imageInView ? 1 : 0, y: imageInView ? 0 : 50 }}
-        transition={{ duration: 0.9, ease: [0.17, 0.55, 0.55, 1], delay: 0.5 }}
-      >
-        <motion.div
-          className="w-full lg:w-[60%]"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: imageInView ? 1 : 0, y: imageInView ? 0 : 50 }}
-          transition={{
-            duration: 0.9,
-            ease: [0.17, 0.55, 0.55, 1],
-            delay: 0.7,
-          }}
-        >
-          <img
-            src="/office-7.jpg"
-            alt=""
-            className="h-[50vh] w-full lg:h-full object-cover"
-          />
-        </motion.div>
-
-        <motion.div
-          className="w-full lg:w-[40%] hidden lg:flex flex-col gap-5"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: imageInView ? 1 : 0, y: imageInView ? 0 : 50 }}
-          transition={{
-            duration: 0.9,
-            ease: [0.17, 0.55, 0.55, 1],
-            delay: 0.9,
-          }}
-        >
-          <motion.img
-            src="/office-9.jpg"
-            alt=""
-            className="lg:h-[33vh] object-cover"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: imageInView ? 1 : 0, y: imageInView ? 0 : 50 }}
-            transition={{
-              duration: 0.9,
-              ease: [0.17, 0.55, 0.55, 1],
-              delay: 1.1,
-            }}
-          />
-          <motion.img
-            src="/office-8.jpg"
-            alt=""
-            className="lg:h-[34vh] object-cover"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: imageInView ? 1 : 0, y: imageInView ? 0 : 50 }}
-            transition={{
-              duration: 0.9,
-              ease: [0.17, 0.55, 0.55, 1],
-              delay: 1.3,
-            }}
-          />
-        </motion.div>
-      </motion.div>
     </section>
   );
 };

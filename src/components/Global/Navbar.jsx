@@ -83,13 +83,12 @@ const Navbar = () => {
         >
           About Us
         </Link>
-        <Link
+        {/* <Link
           to="/what-we-do"
           className="text-lg quantico-fonts font-medium secondary-text cursor-pointer hover:text-[#E5B447] transition-all duration-300"
-          // onClick={() => handleNavigate("/what-we-do")}
         >
           Services
-        </Link>
+        </Link> */}
         <Link
           to="/products"
           className="text-lg quantico-fonts font-medium secondary-text cursor-pointer hover:text-[#E5B447] transition-all duration-300"

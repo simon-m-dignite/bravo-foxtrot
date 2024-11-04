@@ -22,13 +22,10 @@ const AboutPage = () => {
   }, []);
   return (
     <div className="bg-black text-white">
-      {/* <AboutUsHero /> */}
       <CompanyHistory />
       <Company />
       <OurValuesSection />
       <TeamSection />
-      {/* <CareersSection /> */}
-      {/* <LifeAtBravoFoxtrot /> */}
     </div>
   );
 };

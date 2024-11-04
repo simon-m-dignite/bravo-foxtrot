@@ -23,11 +23,11 @@ export const routes = [
     url: "/about-us",
     page: <Layout pages={<AboutPage />} />,
   },
-  {
-    title: "Services Page",
-    url: "/what-we-do",
-    page: <Layout pages={<ServicesPage />} />,
-  },
+  // {
+  //   title: "Services Page",
+  //   url: "/what-we-do",
+  //   page: <Layout pages={<ServicesPage />} />,
+  // },
   {
     title: "Services Page",
     url: "/products",

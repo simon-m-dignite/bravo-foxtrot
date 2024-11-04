@@ -30,13 +30,19 @@ const Footer = () => {
             Redefining Safety Through <br /> Innovation
           </p>
           <div className="flex items-center gap-6 bg-[#101010]">
-            <Link to="https://www.facebook.com" className="red-text">
+            <Link
+              to="https://www.facebook.com/profile.php?id=61556271182751"
+              className="red-text"
+            >
               <GrFacebookOption className="red-text" />
             </Link>
-            <Link to="https://www.instagram.com">
+            <Link to="https://www.instagram.com/bravo_foxtrotllc/">
               <FaInstagram className="red-text" />
             </Link>
-            <Link to="https://www.linkedin.com">
+            <Link
+              target="_blank"
+              to="https://www.linkedin.com/company/bravofoxtrot/"
+            >
               <FaLinkedinIn className="red-text" />
             </Link>
             <Link to="https://www.twitter.com">
@@ -67,7 +73,7 @@ const Footer = () => {
       <div className="w-full border border-[#1f1f1f]" />
       <div className="w-full bg-[#101010] horizontal-padding flex flex-col md:flex-row items-center justify-between gap-6 py-5">
         <p className="secondary-text flex items-center text-sm">
-          Copy right @ BravoFoxtrot.
+          Copyright @ Bravo Foxtrot LLC
         </p>
         <div className="flex items-center gap-14 bg-[#101010]">
           <p className="secondary-text flex items-center gap-2 text-sm">

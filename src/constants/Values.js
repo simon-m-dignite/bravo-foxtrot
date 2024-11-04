@@ -6,7 +6,7 @@ export const values = [
   },
   {
     title: "Commitment",
-    desc: "Building lasting relationships, delivering reliable solutions and continuously improving to meet our customers evolving needs.",
+    desc: "Building lasting relationships, delivering reliable solutions, and continuously improving to meet our customer’s evolving needs.",
     image: "/values-commitment.jpg",
   },
   {

@@ -46,7 +46,7 @@ const CurrentOpenings = () => {
                 Job Title
               </th>
               <th className="text-start py-5 red-text">Department</th>
-              <th className="text-start py-5 red-text">Pay Type</th>
+              {/* <th className="text-start py-5 red-text">Pay Type</th> */}
               <th className="text-start py-5 rounded-r-xl red-text">Action</th>
             </tr>
           </thead>
@@ -57,7 +57,7 @@ const CurrentOpenings = () => {
                   {job.name}
                 </td>
                 <td className="py-5">{job.department}</td>
-                <td className="py-5">{job.payType}</td>
+                {/* <td className="py-5">{job.payType}</td> */}
                 <td className="py-5">
                   <button
                     type="button"

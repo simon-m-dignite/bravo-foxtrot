@@ -36,7 +36,7 @@ const CompanyHistory = () => {
             }}
             className="section-heading red-text"
           >
-            Mission and Vision
+            Mission
           </h3>
           <p
             ref={ref2}
@@ -47,14 +47,23 @@ const CompanyHistory = () => {
             }}
             className="text-size"
           >
-            Our mission is to deliver top-tier products to law enforcement,
-            ensuring officer safety and enhancing operational effectiveness. We
-            are committed to innovation, collaboration, and continuous
-            improvement to meet the evolving challenges faced by those who serve
-            and protect our communities.
+            Provide first responders with the investigative tools needed to
+            predict, prevent, and respond to criminal activities with accuracy,
+            efficiency, and safety.
           </p>
+          <h3
+            ref={ref1}
+            style={{
+              transform: inView1 ? "none" : "translateY(70px)",
+              opacity: inView1 ? 1 : 0,
+              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+            }}
+            className="section-heading red-text"
+          >
+            Vision
+          </h3>
           <p
-            ref={ref3} // Use the third ref here
+            ref={ref3}
             style={{
               transform: inView3 ? "none" : "translateY(70px)",
               opacity: inView3 ? 1 : 0,
@@ -62,13 +71,9 @@ const CompanyHistory = () => {
             }}
             className="text-size"
           >
-            Our vision is to become the foremost global provider of advanced
-            technology solutions for law enforcement. We strive to be recognized
-            for our unwavering commitment to quality and safety while supporting
-            those who protect our communities. We envision a future where our
-            cutting-edge innovations enable law enforcement agencies to respond
-            more effectively to challenges, ultimately fostering a safer society
-            for everyone.
+            We aim to become a trusted leader in investigative analytics,
+            renowned for our groundbreaking solutions that significantly enhance
+            public safety. 
           </p>
         </div>
       </div>

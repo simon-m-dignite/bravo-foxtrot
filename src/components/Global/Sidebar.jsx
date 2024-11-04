@@ -43,12 +43,12 @@ const Sidebar = ({ onclick }) => {
         >
           About Us
         </li>
-        <li
+        {/* <li
           className="text-2xl lg:text-5xl quantico-fonts font-extrabold secondary-text cursor-pointer hover:text-[#e0a56b] transition-all duration-300"
           onClick={() => handleNavigate("/what-we-do")}
         >
           Services
-        </li>
+        </li> */}
         <li
           className="text-2xl lg:text-5xl quantico-fonts font-extrabold secondary-text cursor-pointer hover:text-[#e0a56b] transition-all duration-300"
           onClick={() => handleNavigate("/products")}

@@ -20,7 +20,7 @@ const CareersPage = () => {
   return (
     <div className="w-full overflow-x-hidden">
       <CareersHero />
-      <ImageGrid />
+      {/* <ImageGrid /> */}
       <BenefitsSection />
       <LifeAtBravoFoxtrot />
       <CurrentOpenings />
