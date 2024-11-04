@@ -2,7 +2,8 @@ export const team_members = [
   {
     name: "Brandon Puhlman",
     designation: "Founder & CEO",
-    image: "/team/BravoFoxtrotHeadshot2-02.jpg",
+    image: "/team/BPuhlman-Updated.jpg",
+    // image: "/team/BravoFoxtrotHeadshot2-02.jpg",
     description:
       "Brandon Puhlman, Founder and CEO of Bravo Foxtrot LLC, has over two decades of experience spanning military service, civilian roles, and law enforcement. A combat veteran of the U.S. Marine Corps and Army, Brandon later served as a civilian project manager in the U.S. Navy before becoming an undercover narcotics detective with the Sandy Springs Police Department. Throughout his career, he witnessed firsthand the technological gaps in vehicle tracking, real-time data sharing, and officer safety that hindered law enforcement efforts. His diverse experience inspired him to create Bravo Foxtrot, where he now leads the development of advanced solutions to enhance law enforcement capabilities and officer safety.",
   },
@@ -16,7 +17,7 @@ export const team_members = [
   {
     name: "Brandon Payne ",
     designation: "Vice President",
-    image: "/team/BPuhlman-Updated.jpg",
+    image: "/team/BravoFoxtrotHeadshot2-02.jpg",
     description:
       "Brandon Payne is the Vice President of Product, bringing over 15 years of expertise in product portfolio management, operational program management, vendor management, and service delivery. As a champion for product portfolios and program-level plans, Brandon excels at navigating cross-functional enterprises and diverse industries to ensure alignment and success. In addition to his role at Bravo Foxtrot, Brandon is a U.S. Naval Officer, where he holds the position of Joint Strike Targeting Department Head for the Naval Aviation Warfare Development Center (NAWDC). He provides critical targeting expertise to combatant commands, special operations, and numbered fleets in this capacity. Brandon's unique blend of military and corporate experience empowers him to lead product initiatives with precision and strategic insight.",
   },
