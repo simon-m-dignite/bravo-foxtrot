@@ -23,8 +23,15 @@ const Footer = () => {
         <div className="w-[55%] flex flex-col items-start gap-6 bg-[#101010]">
           {/* <h3 className="section-heading red-text">Bravo Foxtrot</h3>
            */}
-          <Link to="/">
-            <img src="/TRIDENT - png.png" alt="logo" className="w-24 h-20" />
+          <Link to={"/"} className="flex items-center justify-start gap-2">
+            <img
+              src="/TRIDENT - png.png"
+              alt="logo"
+              className="w-[55px] h-[70px] z-50"
+            />
+            <span className="red-text quantico-fonts text-2xl">
+              Bravo Foxtrot
+            </span>
           </Link>
           <p>
             Redefining Safety Through <br /> Innovation

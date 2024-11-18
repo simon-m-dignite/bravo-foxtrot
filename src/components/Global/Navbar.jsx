@@ -15,25 +15,25 @@ function useMenuAnimation(isOpen) {
   useEffect(() => {
     const menuAnimations = isOpen
       ? [
-        [
-          "nav",
-          { transform: "translateX(0%)" },
-          { ease: [0.08, 0.65, 0.53, 0.96], duration: 2 },
-        ],
-        [
-          "li",
-          { transform: "scale(1)", opacity: 1, filter: "blur(0px)" },
-          { delay: stagger(0.1), at: "-0.1" },
-        ],
-      ]
+          [
+            "nav",
+            { transform: "translateX(0%)" },
+            { ease: [0.08, 0.65, 0.53, 0.96], duration: 2 },
+          ],
+          [
+            "li",
+            { transform: "scale(1)", opacity: 1, filter: "blur(0px)" },
+            { delay: stagger(0.1), at: "-0.1" },
+          ],
+        ]
       : [
-        [
-          "li",
-          { transform: "scale(0.5)", opacity: 0, filter: "blur(10px)" },
-          { delay: stagger(0.1, { from: "last" }), at: "<" },
-        ],
-        ["nav", { transform: "translateX(-100%)" }, { at: "-0.1" }],
-      ];
+          [
+            "li",
+            { transform: "scale(0.5)", opacity: 0, filter: "blur(10px)" },
+            { delay: stagger(0.1, { from: "last" }), at: "<" },
+          ],
+          ["nav", { transform: "translateX(-100%)" }, { at: "-0.1" }],
+        ];
 
     animate([
       [
@@ -64,22 +64,28 @@ const Navbar = () => {
   };
   return (
     <nav className="w-full horizontal-padding py-6 flex items-center justify-between z-50 bg-black">
-      <Link to={"/"} className="flex items-center ">
-        <img src="/TRIDENT - png.png" alt="logo" className="w-[85px] h-[60px] z-50" />
-        <span className="red-text quantico-fonts text-2xl">Bravo Foxtrot</span>
+      <Link to={"/"} className="flex items-center justify-start gap-2">
+        <img
+          src="/TRIDENT - png.png"
+          alt="logo"
+          className="w-[35px] h-[48px] md:w-[55px] md:h-[70px]  z-50"
+        />
+        <span className="red-text quantico-fonts text-xl md:text-2xl">
+          Bravo Foxtrot
+        </span>
       </Link>
       <ul className="hidden items-center gap-10 2xl:gap-16 justify-end">
         <Link
           to="/"
           className="text-lg quantico-fonts font-medium secondary-text cursor-pointer hover:text-[#E5B447] transition-all duration-300"
-        // onClick={() => handleNavigate("/")}
+          // onClick={() => handleNavigate("/")}
         >
           Home
         </Link>
         <Link
           to="/about-us"
           className="text-lg quantico-fonts font-medium secondary-text cursor-pointer hover:text-[#E5B447] transition-all duration-300"
-        // onClick={() => handleNavigate("/about-us")}
+          // onClick={() => handleNavigate("/about-us")}
         >
           About Us
         </Link>
@@ -92,7 +98,7 @@ const Navbar = () => {
         <Link
           to="/products"
           className="text-lg quantico-fonts font-medium secondary-text cursor-pointer hover:text-[#E5B447] transition-all duration-300"
-        // onClick={() => handleNavigate("/products")}
+          // onClick={() => handleNavigate("/products")}
         >
           Products
         </Link>
@@ -100,7 +106,7 @@ const Navbar = () => {
         <Link
           to="/products"
           className="text-lg quantico-fonts font-medium secondary-text cursor-pointer hover:text-[#E5B447] transition-all duration-300"
-        // onClick={() => handleNavigate("/products")}
+          // onClick={() => handleNavigate("/products")}
         >
           Industries Served
         </Link>
@@ -108,7 +114,7 @@ const Navbar = () => {
         <Link
           to="/careers"
           className="text-lg quantico-fonts font-medium secondary-text cursor-pointer hover:text-[#E5B447] transition-all duration-300"
-        // onClick={() => handleNavigate("/careers")}
+          // onClick={() => handleNavigate("/careers")}
         >
           Careers
         </Link>
@@ -116,7 +122,7 @@ const Navbar = () => {
         <Link
           to="/contact-us"
           className="text-lg quantico-fonts font-medium secondary-text cursor-pointer hover:text-[#E5B447] transition-all duration-300"
-        // onClick={() => handleNavigate("/contact-us")}
+          // onClick={() => handleNavigate("/contact-us")}
         >
           Contact Us
         </Link>
@@ -139,8 +145,9 @@ const Navbar = () => {
       </div>
       <div
         ref={scope}
-        className={`w-full h-screen fixed inset-0 z-50 transition-all duration-700 ${isOpen ? "translate-x-0" : "translate-x-full"
-          } `}
+        className={`w-full h-screen fixed inset-0 z-50 transition-all duration-700 ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        } `}
       >
         <Sidebar onclick={handleOpen} />
       </div>
