@@ -10,7 +10,7 @@ const Hero = () => {
         <source src="/bravo-foxtrot.mp4" />
       </video> */}
       <img
-        src="/logo.png"
+        src="/TRIDENT - png.png"
         alt=""
         className="w-auto h-[70%] lg:h-[90%] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0 opacity-40"
       />
