@@ -24,7 +24,7 @@ const Footer = () => {
           {/* <h3 className="section-heading red-text">Bravo Foxtrot</h3>
            */}
           <Link to="/">
-            <img src="/logo.png" alt="logo" className="w-16 h-16" />
+            <img src="/TRIDENT - png.png" alt="logo" className="w-24 h-20" />
           </Link>
           <p>
             Redefining Safety Through <br /> Innovation
