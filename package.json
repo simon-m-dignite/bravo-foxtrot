@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@popmotion/popcorn": "^0.4.4",
     "@studio-freight/lenis": "^1.0.42",
     "emailjs": "^4.0.3",
