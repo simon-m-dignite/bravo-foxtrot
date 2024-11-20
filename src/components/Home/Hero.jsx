@@ -31,7 +31,7 @@ const Hero = () => {
         transition={{ duration: 1, ease: "easeOut" }}
         className="lg:ml-3 text-xl 2xl:text-4xl tracking-wide z-10"
       >
-        Courage | Commitment | Justice.
+        Courage | Commitment | Justice
       </motion.p>
     </div>
   );

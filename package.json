@@ -12,6 +12,7 @@
   "dependencies": {
     "@popmotion/popcorn": "^0.4.4",
     "@studio-freight/lenis": "^1.0.42",
+    "emailjs": "^4.0.3",
     "framer-motion": "^11.3.31",
     "lenis": "^1.1.13",
     "react": "^18.3.1",
