@@ -25,9 +25,9 @@ const Footer = () => {
            */}
           <Link to={"/"} className="flex items-center justify-start gap-2">
             <img
-              src="/TRIDENT - png.png"
+              src="/logo-white.png"
               alt="logo"
-              className="w-[55px] h-[70px] z-50"
+              className="w-[70px] h-[70px] z-50"
             />
             <span className="red-text quantico-fonts text-2xl">
               Bravo Foxtrot

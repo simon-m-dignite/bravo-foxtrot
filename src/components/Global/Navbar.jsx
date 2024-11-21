@@ -66,9 +66,9 @@ const Navbar = () => {
     <nav className="w-full horizontal-padding py-6 flex items-center justify-between z-50 bg-black">
       <Link to={"/"} className="flex items-center justify-start gap-2">
         <img
-          src="/TRIDENT - png.png"
+          src="/logo-white.png"
           alt="logo"
-          className="w-[35px] h-[48px] md:w-[55px] md:h-[70px]  z-50"
+          className="w-[48px] h-[48px] md:w-[70px] md:h-[70px]  z-50"
         />
         <span className="red-text quantico-fonts text-xl md:text-2xl">
           Bravo Foxtrot
