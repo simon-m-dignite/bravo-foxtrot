@@ -4,7 +4,7 @@ import { TfiEmail } from "react-icons/tfi";
 import { Link, useNavigate } from "react-router-dom";
 import { FiPhoneCall, FiArrowRight } from "react-icons/fi";
 import { SlLocationPin } from "react-icons/sl";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 const ContactForm = () => {
   const form = useRef();
 
@@ -47,38 +47,33 @@ const ContactForm = () => {
       setLoading(true);
 
       setTimeout(() => {
+        emailjs
+          .sendForm("service_dkyakw9", "template_bchzmof", form.current, {
+            publicKey: "hIfSXgwwkGvo0ENce",
+          })
+          .then(
+            () => {
+              console.log("SUCCESS!");
+              setErrors({});
+              setLoading(false);
+              navigate("/thank-you");
+              setFormData({
+                firstName: "",
+                lastName: "",
+                email: "",
+                message: "",
+              });
+            },
+            (error) => {
+              console.log("FAILED...", error.text);
+            }
+          );
         console.log("Form submitted successfully", formData);
-        setFormData({
-          firstName: "",
-          lastName: "",
-          email: "",
-          message: "",
-        });
-        setErrors({});
-        setLoading(false);
-        navigate("/thank-you");
       }, 1500);
     } else {
       setErrors(validationErrors);
     }
-
-
-    emailjs
-      .sendForm('service_dkyakw9', 'template_bchzmof', form.current, {
-        publicKey: 'hIfSXgwwkGvo0ENce',
-      })
-      .then(
-        () => {
-          console.log('SUCCESS!');
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-        },
-      );
-
-
   };
-
 
   return (
     <div className="w-full min-h-screen bg-black horizontal-padding text-white flex items-center pb-32">
@@ -169,7 +164,8 @@ const ContactForm = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.9, ease: [0.17, 0.55, 0.55, 1] }}
         >
-          <form ref={form}
+          <form
+            ref={form}
             onSubmit={handleSubmit}
             className="w-full flex flex-col items-start gap-y-8"
           >
@@ -194,8 +190,9 @@ const ContactForm = () => {
                   type="text"
                   name="firstName"
                   id="firstName"
-                  className={`block p-5 w-full text-2xl text-white bg-transparent border rounded-full border-[#2d2d2d] appearance-none focus:border-[#E5B447] focus:outline-none focus:ring-0 peer font-normal quantico-fonts ${errors.firstName ? "border-red-500" : ""
-                    }`}
+                  className={`block p-5 w-full text-2xl text-white bg-transparent border rounded-full border-[#2d2d2d] appearance-none focus:border-[#E5B447] focus:outline-none focus:ring-0 peer font-normal quantico-fonts ${
+                    errors.firstName ? "border-red-500" : ""
+                  }`}
                   placeholder="Your first Name"
                   autoComplete="off"
                   value={formData.firstName}
@@ -224,8 +221,9 @@ const ContactForm = () => {
                   type="text"
                   name="lastName"
                   id="lastName"
-                  className={`block p-5 w-full text-2xl text-white bg-transparent border rounded-full border-[#2d2d2d] appearance-none focus:border-[#E5B447] focus:outline-none focus:ring-0 peer font-normal quantico-fonts ${errors.lastName ? "border-red-500" : ""
-                    }`}
+                  className={`block p-5 w-full text-2xl text-white bg-transparent border rounded-full border-[#2d2d2d] appearance-none focus:border-[#E5B447] focus:outline-none focus:ring-0 peer font-normal quantico-fonts ${
+                    errors.lastName ? "border-red-500" : ""
+                  }`}
                   placeholder="Your last Name"
                   autoComplete="off"
                   value={formData.lastName}
@@ -254,8 +252,9 @@ const ContactForm = () => {
                 type="email"
                 name="email"
                 id="email"
-                className={`block p-5 w-full text-2xl text-white bg-transparent border rounded-full border-[#2d2d2d] appearance-none focus:border-[#E5B447] focus:outline-none focus:ring-0 peer font-normal quantico-fonts ${errors.email ? "border-red-500" : ""
-                  }`}
+                className={`block p-5 w-full text-2xl text-white bg-transparent border rounded-full border-[#2d2d2d] appearance-none focus:border-[#E5B447] focus:outline-none focus:ring-0 peer font-normal quantico-fonts ${
+                  errors.email ? "border-red-500" : ""
+                }`}
                 placeholder="Your email address"
                 value={formData.email}
                 onChange={handleChange}
@@ -282,8 +281,9 @@ const ContactForm = () => {
                 id="message"
                 name="message"
                 rows={5}
-                className={`block p-5 w-full text-2xl text-white bg-transparent border rounded-[44px] border-[#2d2d2d] appearance-none focus:border-[#E5B447] focus:outline-none focus:ring-0 peer font-normal quantico-fonts ${errors.message ? "border-red-500" : ""
-                  }`}
+                className={`block p-5 w-full text-2xl text-white bg-transparent border rounded-[44px] border-[#2d2d2d] appearance-none focus:border-[#E5B447] focus:outline-none focus:ring-0 peer font-normal quantico-fonts ${
+                  errors.message ? "border-red-500" : ""
+                }`}
                 placeholder="Your message"
                 style={{ resize: "none" }}
                 value={formData.message}
