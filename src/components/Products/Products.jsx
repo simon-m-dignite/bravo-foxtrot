@@ -2,8 +2,6 @@ import { useInView, useScroll, useTransform, motion } from "framer-motion";
 import React, { useRef } from "react";
 import ProductCard from "../Home/ProductCard";
 import ProductCard2 from "../Home/ProductCard2";
-import { products } from "../../constants/products";
-import { Link } from "react-router-dom";
 
 const Products = () => {
   const SectionRef = useRef(null);
@@ -60,20 +58,6 @@ const Products = () => {
       </div>
 
       <div className="w-full flex flex-col gap-10 mt-20 overflow-hidden">
-        {/* {products.map((product, index) => {
-          return (
-            <ProductCard
-              image={product.product_image}
-              title={product.product_title}
-              desc={product.product_desc}
-              key={index}
-              index={index}
-              tag={product.tag}
-              features={product.features}
-              tag_line={product.tag_line}
-            />
-          );
-        })} */}
         <ProductCard />
         <ProductCard2 />
       </div>

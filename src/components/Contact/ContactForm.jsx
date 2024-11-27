@@ -48,8 +48,8 @@ const ContactForm = () => {
 
       setTimeout(() => {
         emailjs
-          .sendForm("service_dkyakw9", "template_bchzmof", form.current, {
-            publicKey: "hIfSXgwwkGvo0ENce",
+          .sendForm("serviceId", "templateId", form.current, {
+            publicKey: "publicKey",
           })
           .then(
             () => {

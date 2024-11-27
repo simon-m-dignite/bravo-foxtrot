@@ -60,21 +60,9 @@ const OverviewSection = () => {
             >
               Learn More <GoArrowUpRight className="text-xl" />
             </Link>
-            {/* <Link
-              to="/contact-us"
-              className="bg-[#F79F1F] text-white py-4 px-4 rounded-full m-[1px]"
-            >
-              <GoArrowUpRight className="text-2xl" />
-            </Link> */}
           </div>
         </div>
       </div>
-      {/* <div className="w-full absolute top-0 z-0 lg:w-1/2 right-0">
-        <video
-          src="/overview-section-video.mp4"
-          className="h-screen object-cover "
-        ></video>
-      </div> */}
     </section>
   );
 };

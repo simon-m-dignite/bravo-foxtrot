@@ -3,7 +3,6 @@ import Layout from "../components/Global/Layout";
 
 const HomePage = lazy(() => import("../pages/home/HomePage"));
 const AboutPage = lazy(() => import("../pages/about/AboutPage"));
-const ServicesPage = lazy(() => import("../pages/services/ServicesPage"));
 const ContactPage = lazy(() => import("../pages/contact/ContactPage"));
 const ProductsPage = lazy(() => import("../pages/products/ProductsPage"));
 const CareersPage = lazy(() => import("../pages/careers/CareersPage"));
@@ -23,11 +22,6 @@ export const routes = [
     url: "/about-us",
     page: <Layout pages={<AboutPage />} />,
   },
-  // {
-  //   title: "Services Page",
-  //   url: "/what-we-do",
-  //   page: <Layout pages={<ServicesPage />} />,
-  // },
   {
     title: "Services Page",
     url: "/products",

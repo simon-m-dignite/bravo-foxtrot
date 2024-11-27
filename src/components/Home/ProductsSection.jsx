@@ -2,7 +2,6 @@ import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useRef } from "react";
 import ProductCard from "./ProductCard";
 import ProductCard2 from "./ProductCard2";
-import { products } from "../../constants/products";
 import { Link } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
 
@@ -14,7 +13,6 @@ const ProductsSection = () => {
   });
   const y = useTransform(scrollYProgress, [0, 1], ["-20%", "10%"]);
 
-  // For header and paragraph
   const [headerRef, headerInView] = useInView({ once: true });
   const [paragraphRef, paragraphInView] = useInView({ once: true });
 
@@ -71,22 +69,6 @@ const ProductsSection = () => {
       </div>
 
       <div className="w-full flex flex-col gap-10 mt-20 overflow-hidden">
-        {/* {products.map((product, index) => {
-          return (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 100 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 1,
-                ease: [0.17, 0.55, 0.55, 1],
-                delay: index * 0.1,
-              }}
-            >
-              <ProductCard />
-            </motion.div>
-          );
-        })} */}
         <ProductCard />
         <ProductCard2 />
       </div>
